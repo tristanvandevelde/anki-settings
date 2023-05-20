@@ -1,0 +1,30 @@
+{{#EN}}
+
+<div id="front">
+
+    <div class="top"></div>
+
+    <div class="container">
+        <div class="center">
+                    <span class="english">
+                        {{EN}} 
+                    </span> 
+            <span id="hint" class="pos"></span>
+            {{#Remark}}
+                <div class="pos">
+                    ({{Remark}})
+                </div>
+            {{/Remark}}
+        </div>
+    </div>
+
+</div>
+
+
+<script defer src="_cloze_anything_0.3.js"></script>
+<script>
+	 if ("{{POS}}" == ("Adv" || "Adj")) 
+			document.getElementById("hint").innerHTML= "({{POS}})" 
+</script>
+
+{{/EN}}

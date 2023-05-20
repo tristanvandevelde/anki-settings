@@ -1,0 +1,81 @@
+<div id="back">
+
+    <div class="top"></div>
+    
+    <div class="container">
+        <div class="center">
+            <span class="english">
+                {{EN}}
+            </span> 
+            {{#Remark}}
+                <div class="pos">
+                    ({{Remark}})
+                </div>
+            {{/Remark}}
+        </div>
+    </div>
+    
+    <hr/>
+    
+    <div class="container">
+        <div class="center">
+            <div>
+                <span class="russian">
+                    {{RU}}
+                </span> 
+                <span class="pos">
+                    ({{POS}})
+                </span>
+            </div>
+            {{#TTS}}
+            <div>
+                {{TTS}}
+            </div> 
+            {{/TTS}}
+        </div>
+    </div>
+    <hr/>
+    
+    <!-- if an example sentence is available, show it -->
+    {{#sentence1_RU}}
+        <div class="container">
+            <div class="center">
+                <div class="rusentence" id="cloze" data-card="cloze1">
+                    {{sentence1_RU}}
+                </div>  
+                <div class="ensentence">
+                    {{sentence1_EN}}
+                </div>
+                {{#TTS_sentence1}}
+                    <div>
+                        {{TTS_sentence1}}
+                    </div> 
+                {{/TTS_sentence1}}
+            </div>
+        </div>
+        <hr/>
+    {{/sentence1_RU}}
+
+    <!-- show notes if there are any -->
+    {{#Notes}}
+        <div class="notes">
+            {{Notes}}
+        </div>
+    {{/Notes}}
+    
+    <!-- show url if there is any -->
+    <a href="https://en.openrussian.org/ru/{{text:RU}}" class="link">
+        link 
+    </a>
+    
+    
+    
+    <!-- show tags -->
+    <div class="tags">
+        {{Tags}}
+    </div>
+    
+</div>
+
+
+<script defer src="_cloze_anything_0.3.js"></script>

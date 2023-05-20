@@ -1,0 +1,165 @@
+
+
+
+.card {
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+/* CARD STRUCTURE */
+.container {
+	height: 100px;
+}
+
+.container-large {
+	height: 200px;
+}
+
+.top {
+	margin-top: 50px;
+}
+
+.center {
+	position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.input {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.notes {
+	font-family: futura, PT Sans, AvenirNext, sans serif;
+	font-size: 16px;
+	float: left;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+	text-align: left;
+}
+
+a.link { 
+	font-size: 11px; 
+	float: right; 
+	opacity: 1.0;
+	margin-left: 50px;
+	margin-right: 50px;	
+	text-align: right;
+	color: #268bd2;
+	margin-top: 26px;
+}
+
+
+.tags {
+  color: #619fca;
+  font-family: "Futura", arial, "PT Sans";
+  font-size: 14px; 
+	position:absolute;
+  width:100%;
+  bottom:5px;
+}
+
+.replay-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.replay-button svg circle {
+  fill: white;
+}
+
+.replay-button svg path {
+  stroke: black;
+  fill: #586e75;
+}
+
+
+.current-cloze {
+  color: blue;
+  font-weight: bold;
+}
+
+.other-cloze {
+  color: grey;
+}
+
+#cloze {
+  visibility: hidden;
+}
+
+#cloze.show {
+  visibility: visible;
+}
+
+/* STYLING */
+
+.pos {
+  font-family: "Futura", arial, "PT Sans";
+  font-style: italic;
+  font-size: 18px;
+  color: #839496; 
+}
+
+div.notes {
+  font-size: 16px;
+  text-align: left;
+  color: #839496; }
+
+.rusentence {
+  font-family: "PT Serif", "Times New Roman";
+  font-size: 20px;
+  font-weight: bold;
+  color: #586e75; 
+}
+
+.ensentence {
+  font-family: "Futura", arial, "PT Sans";
+  font-size: 18px;
+  font-style: italic;
+  color: #839496; 
+}
+
+.english {
+  font-size: 24px;
+  font-family: sans-serif, "Futura", arial, "PT Sans";
+	color: #003743;
+}
+
+.russian {
+	font-size: 30px;
+	font-weight: bold; 
+  font-family: Georgia, "PT Serif", "Times New Roman", serif;
+	color: #003743;
+}
+
+.tags {
+  color: #619fca;
+  font-family: "Futura", arial, "PT Sans";
+  font-size: 14px; 
+	margin-top: 50%;
+	width: 80%;
+	margin-left: 5%;
+}
+
+img {
+	width: auto;
+	height: auto;
+	max-height: 185px;
+}
+
+/* COLORS */
+
+.blue { color: #268bd2; }
+.cyan { color: #2aa198; }
+.orange { color: #cb4b16; }
+.blue { color: #268bd2; }
+.base0 {color: #839496; }
+.base01 {color: #586e75; }
+.base00 { color: #657b83; }
